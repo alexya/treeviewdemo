@@ -24,10 +24,10 @@ const TreeNode = (props: TreeNodeProps) => {
 
   const handleDoubleClick = useCallback(() => {
     setExpanded((prev) => !prev);
-    console.log(`double click the node: ${node.name}`);
+    console.log(`double click the node: ${node.name}.`);
   }, [node]);
 
-  console.log("render treenode");
+  console.log("Render TreeNode");
   return (
     <React.Fragment>
       <div

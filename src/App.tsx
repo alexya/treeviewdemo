@@ -3,6 +3,9 @@ import { Item } from "./types";
 import TreeNode from "./treenode";
 import reducer, { initialState, TreeViewContextType } from "./slice";
 
+// refer to :https://github.com/facebook/create-react-app/issues/9429
+// to resolve the `yarn start` broken issue.
+
 export const TreeViewContext = React.createContext<TreeViewContextType>({
   state: initialState
 });
